@@ -10,6 +10,7 @@ package API_Chaining;
 import static io.restassured.RestAssured.given;
 
 import org.hamcrest.Matchers;
+import org.testng.Assert;
 
 import File.Payload;
 import io.restassured.RestAssured;
@@ -48,11 +49,21 @@ public class Client {
 		.when()
 			.put("maps/api/place/update/json")
 		.then()
-			.log().all()
 			.assertThat()
 			.statusCode(200)
 			.header("Server", Matchers.equalTo("Apache/2.4.52 (Ubuntu)"))
 			.body("msg", Matchers.equalTo("Address successfully updated"));
+		
+//		Get Place
+		given()
+			.queryParam("key", "qaclick123").queryParam("place_id", placeID)
+		.when()
+			.get("maps/api/place/get/json")
+		.then()
+			.log().all()
+			.assertThat()
+			.statusCode(200)
+			.body("address", Matchers.equalTo("64 Narasingha Avenue"));
 	}
 
 }
