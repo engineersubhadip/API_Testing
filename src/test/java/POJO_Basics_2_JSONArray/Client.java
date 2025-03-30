@@ -3,13 +3,9 @@ package POJO_Basics_2_JSONArray;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import io.restassured.path.json.JsonPath;
 
 public class Client {
 
@@ -55,13 +51,16 @@ public class Client {
 		
 //		Convert JSON Response to Java Object :-  De-Serialize
 		
-		JSONArray arr = new JSONArray(requestPayload);
+		List<Employee> responseList = obj.readValue(requestPayload, new TypeReference<List<Employee>>() {});
+		System.out.println(responseList);
 		
-		for (int i=0; i<arr.length(); i++) {
-			String currObj = arr.get(i).toString();
-			Employee currEmp = obj.readValue(currObj, Employee.class);
-			System.out.println("FirstName : "+currEmp.getFirstName()+" ||  LastName : "+currEmp.getLastName());
-		}
+//		JSONArray arr = new JSONArray(requestPayload);
+//		
+//		for (int i=0; i<arr.length(); i++) {
+//			String currObj = arr.get(i).toString();
+//			Employee currEmp = obj.readValue(currObj, Employee.class);
+//			System.out.println("FirstName : "+currEmp.getFirstName()+" ||  LastName : "+currEmp.getLastName());
+//		}
 	}
 
 }
