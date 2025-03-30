@@ -44,10 +44,10 @@ public class Client {
 //		How to ignore Empty Values :-
 		Employee emp3 = new Employee();
 		emp3.setFirstName("Hello");
-		emp3.setLastName("World");
+//		emp3.setLastName("World");
 		emp3.setGender("Male");
 		emp3.setAge(22);
-		emp3.setSalary(22222222);
+//		emp3.setSalary(22222222);
 //		emp3.isMarried()
 		emp3.setHobbies(new ArrayList<>());
 		

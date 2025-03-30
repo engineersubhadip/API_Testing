@@ -6,8 +6,8 @@ import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 //@JsonInclude(JsonInclude.Include.NON_DEFAULT)
-//@JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonInclude(JsonInclude.Include.NON_EMPTY)
+//@JsonInclude(JsonInclude.Include.NON_NULL) // will igonore only null values
+@JsonInclude(JsonInclude.Include.NON_EMPTY) // will ignore both null and empty values
 public class Employee {
 
 	private String firstName;
