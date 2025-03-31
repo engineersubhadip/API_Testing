@@ -14,6 +14,7 @@ public class BasicAuthorization {
 		
 		RestAssured.baseURI = "https://postman-echo.com";
 		
+//		Non Preemptive :- 
 		Response responsePay = given()
 			.auth()
 			.basic("postman", "password")
@@ -24,6 +25,18 @@ public class BasicAuthorization {
 		
 		System.out.println("Status Code : "+responsePay.statusCode());
 		responsePay.getBody().prettyPrint();
-
+		
+//		Preemptive :-
+		
+		Response responsePay1 = given()
+				.auth()
+				.preemptive()
+				.basic("postman", "password")
+			.when()
+				.get("/basic-auth")
+			.then()
+				.extract().response();
+		System.out.println("Status Code 1 : "+responsePay1.statusCode());
+		responsePay1.getBody().prettyPrint();
 	}
 }
