@@ -1,0 +1,13 @@
+{
+	"firstName":"Suresh",
+	"lastName":"Mehra",
+	"gender":"Male",
+	"age":35,
+	"salary":10000.56,
+	"address":{
+		"street":"Park Avenue", 
+		"city":"Vijaywada",
+		"state":"Andra Pradesh",
+		"pincode":530012
+	}
+}

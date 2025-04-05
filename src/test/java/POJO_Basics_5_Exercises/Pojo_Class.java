@@ -1,12 +1,13 @@
-package POJO_Deserialization;
+package POJO_Basics_5_Exercises;
 
-public class Parent {
+public class Pojo_Class {
+
 	private String instructor;
 	private String url;
 	private String services;
 	private String expertise;
-	private Courses_Child courses; // We are plugging in the object of Courses_Child inside the Parent JSON
-	private String linkedin;
+	private Courses courses;
+	private String linkedIn;
 
 	public String getInstructor() {
 		return instructor;
@@ -40,19 +41,20 @@ public class Parent {
 		this.expertise = expertise;
 	}
 
-	public Courses_Child getCourses() {
+	public Courses getCourses() {
 		return courses;
 	}
 
-	public void setCourses(Courses_Child courses) {
+	public void setCourses(Courses courses) {
 		this.courses = courses;
 	}
 
-	public String getLinkedin() {
-		return linkedin;
+	public String getLinkedIn() {
+		return linkedIn;
 	}
 
-	public void setLinkedin(String linkedin) {
-		this.linkedin = linkedin;
+	public void setLinkedIn(String linkedIn) {
+		this.linkedIn = linkedIn;
 	}
+
 }

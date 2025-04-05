@@ -1,6 +1,7 @@
-package POJO_Deserialization;
+package POJO_Basics_5_Exercises;
 
-public class api_Child {
+public class WebAutomation {
+
 	private String courseTitle;
 	private int price;
 
@@ -19,4 +20,5 @@ public class api_Child {
 	public void setPrice(int price) {
 		this.price = price;
 	}
+
 }

@@ -1,0 +1,23 @@
+[
+	{
+		"firstName":"Suresh",
+		"lastName":"Mehra",
+		"gender":"Male",
+		"age":35,
+		"salary":10000.56
+	},
+	{
+		"firstName":"Rama",
+		"lastName":"Singh",
+		"gender":"Male",
+		"age":30,
+		"salary":34000
+	},
+	{
+		"firstName":"Sikha",
+		"lastName":"Gupta",
+		"gender":"Female",
+		"age":32,
+		"salary":39000
+	}
+]

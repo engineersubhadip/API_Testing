@@ -1,0 +1,51 @@
+{	
+	"companyName" : "XYZ Ltd",
+	"street" : "Africa Avenue",
+	"city" : "RK Puram, Delhi",
+	"state" : "New Delhi",
+	"pincode" : 110066,
+	"bankAccounts" : ["HDFC", "SBI", "ICICI", "BOI"],
+	"employees" : [
+		{
+			"firstName":"Suresh",
+			"lastName":"Mehra",
+			"gender":"Male",
+			"age":35,
+			"salary":10000.56,
+			"address":{
+				"street":"Park Avenue", 
+				"city":"Vijaywada",
+				"state":"Andra Pradesh",
+				"pincode":530012
+			}
+		},
+		
+		{
+			"firstName":"Priya",
+			"lastName":"Singh",
+			"gender":"Female",
+			"age":33,
+			"salary":24500,
+			"address":{
+				"street":"Plot 56 Newar Road", 
+				"city":"Chandigarh",
+				"state":"Punjab",
+				"pincode":23732
+			}
+		},
+		
+		{
+			"firstName":"Amit",
+			"lastName":"Hooda",
+			"gender":"Male",
+			"age":37,
+			"salary":55622,
+			"address":{
+				"street":"Sector 36 Hauz Khas", 
+				"city":"New Delhi",
+				"state":"Delhi",
+				"pincode":12843
+			}
+		}	
+	]
+}
