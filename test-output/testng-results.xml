@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-05T15:16:40Z" name="Default suite" finished-at="2025-04-05T15:16:43Z" duration-ms="3365">
+  <suite started-at="2025-04-06T04:39:16Z" name="Default suite" finished-at="2025-04-06T04:39:19Z" duration-ms="2517">
     <groups>
     </groups>
-    <test started-at="2025-04-05T15:16:40Z" name="Default test" finished-at="2025-04-05T15:16:43Z" duration-ms="3365">
-      <class name="POJO_Exercise_3.SerializeAndDeserialize">
-        <test-method signature="testCase01_SerializeDeserialize()[pri:0, instance:POJO_Exercise_3.SerializeAndDeserialize@6933b6c6]" started-at="2025-04-05T15:16:40Z" name="testCase01_SerializeDeserialize" finished-at="2025-04-05T15:16:43Z" duration-ms="3342" status="PASS">
+    <test started-at="2025-04-06T04:39:16Z" name="Default test" finished-at="2025-04-06T04:39:19Z" duration-ms="2517">
+      <class name="LoadExternalJSONFile.HowToLoadExternalJSON">
+        <test-method signature="testCase_LoadDataFormExternalFile()[pri:0, instance:LoadExternalJSONFile.HowToLoadExternalJSON@5276d6ee]" started-at="2025-04-06T04:39:16Z" name="testCase_LoadDataFormExternalFile" finished-at="2025-04-06T04:39:19Z" duration-ms="2495" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase01_SerializeDeserialize -->
-      </class> <!-- POJO_Exercise_3.SerializeAndDeserialize -->
+        </test-method> <!-- testCase_LoadDataFormExternalFile -->
+      </class> <!-- LoadExternalJSONFile.HowToLoadExternalJSON -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
