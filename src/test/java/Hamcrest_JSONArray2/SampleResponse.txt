@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "name": {
+        "first": "Alice",
+        "last": "Johnson"
+      },
+      "email": "alice.johnson@example.com",
+      "roles": ["admin", "editor"],
+      "address": {
+        "permanent": {
+          "street": "123 Main St",
+          "city": "New York",
+          "zip": "10001"
+        },
+        "temporary": {
+          "street": "456 Elm St",
+          "city": "Brooklyn",
+          "zip": "11201"
+        }
+      },
+      "contacts": {
+        "phone": {
+          "home": "212-555-1234",
+          "work": "646-555-5678"
+        },
+        "social": {
+          "twitter": "@aliceJ",
+          "linkedin": "linkedin.com/in/alicejohnson"
+        }
+      },
+      "loginHistory": [
+        {
+          "timestamp": "2025-04-10T14:22:00Z",
+          "ip": "192.168.1.10",
+          "location": {
+            "city": "New York",
+            "country": "USA"
+          }
+        },
+        {
+          "timestamp": "2025-04-11T09:15:30Z",
+          "ip": "192.168.1.20",
+          "location": {
+            "city": "Chicago",
+            "country": "USA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": {
+        "first": "Bob",
+        "last": "Smith"
+      },
+      "email": "bob.smith@example.com",
+      "roles": ["viewer"],
+      "address": {
+        "permanent": {
+          "street": "789 Maple Ave",
+          "city": "San Francisco",
+          "zip": "94107"
+        },
+        "temporary": null
+      },
+      "contacts": {
+        "phone": {
+          "home": "415-555-7890",
+          "work": null
+        },
+        "social": {
+          "twitter": null,
+          "linkedin": "linkedin.com/in/bsmith"
+        }
+      },
+      "loginHistory": []
+    }
+  ]
+}
